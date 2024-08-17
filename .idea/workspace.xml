@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="17434bab-33fb-4fd4-9acb-6c9ac2c57bf7" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/redis/api/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/api/src/main/java/com/example/api/ApiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/api/src/main/java/com/example/api/controller/CouponControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/api/src/main/java/com/example/api/controller/CouponIssueController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/api/src/main/java/com/example/api/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/api/src/main/java/com/example/api/controller/dto/CouponIssueRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/api/src/main/java/com/example/api/controller/dto/CouponIssueResponseDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/api/src/main/java/com/example/api/service/CouponIssueRequestService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/api/src/main/resources/application-api.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/api/src/test/java/com/example/api/ApiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/consumer/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/consumer/src/main/java/com/example/consumer/ConsumerApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/consumer/src/main/resources/application-consumer.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/consumer/src/test/java/com/example/consumer/ConsumerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/CoreConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/component/CouponEventListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/component/DistributeLockExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/configuration/CacheConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/configuration/LocalCacheConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/configuration/QueryDslConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/configuration/RedisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/exception/CouponIssueException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/exception/ErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/model/BaseTimeEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/model/Coupon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/model/CouponIssue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/model/CouponType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/model/event/CouponIssueCompleteEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/repository/mysql/CouponIssueJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/repository/mysql/CouponIssueRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/repository/mysql/CouponJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/repository/redis/CouponIssueRequestCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/repository/redis/RedisRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/repository/redis/dto/CouponIssueRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/repository/redis/dto/CouponRedisEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/service/AsyncCouponIssueServiceV1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/service/AsyncCouponIssueServiceV2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/service/CouponCacheService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/service/CouponIssueRedisService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/service/CouponIssueService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/java/com/example/core/util/CouponRedisUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/resources/application-core.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/main/resources/sql/schema.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/test/java/com/example/core/TestConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/test/java/com/example/core/model/CouponTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/test/java/com/example/core/service/AsyncCouponIssueServiceV1Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/test/java/com/example/core/service/AsyncCouponIssueServiceV2Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/test/java/com/example/core/service/CouponIssueRedisServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/core/src/test/java/com/example/core/service/CouponIssueServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/redis/settings.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/redis/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/redis/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/redis/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/redis/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" afterPath="$PROJECT_DIR$/redis/gradlew" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/redis/gradlew.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/github/titainper/springlabs/SpringLabsApplication.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/com/github/titainper/springlabs/SpringLabsApplicationTests.kt" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$/api">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="coupon" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="coupon" type="f1a62948:ProjectNode" />
+                <item name="api" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="coupon" type="f1a62948:ProjectNode" />
+                <item name="api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="coupon" type="f1a62948:ProjectNode" />
+                <item name="api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="application" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="coupon" type="f1a62948:ProjectNode" />
+                <item name="api" type="2d1252cf:ModuleNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 7
+}]]></component>
+  <component name="ProjectId" id="2kiodTyk4MIAi40wTzt9bMuteAU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build spring-labs.executor": "Run",
+    "Gradle.spring-labs:api [bootJar].executor": "Run",
+    "Gradle.spring-labs:api [bootRun].executor": "Run",
+    "Gradle.spring-labs:api [build].executor": "Run",
+    "Gradle.spring-labs:api [clean].executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.Core.executor": "Run",
+    "git-widget-placeholder": "main",
+    "jdk.selected.JAVA_MODULE": "corretto-19",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/kangjuyoung/Desktop/workspace/lab/spring-labs",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "kotlin-gradle-user-dirs": [
+      "/Users/kangjuyoung/.gradle"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/redis" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.Core">
+    <configuration name="spring-labs:api [bootJar]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootJar" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring-labs:api [bootRun]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="bootRun" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring-labs:api [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="build" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="spring-labs:api [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/api" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
+    <configuration name="Core" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="coupon.api.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.api.ApiApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SpringLabsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="spring-labs.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.titainper.springlabs.SpringLabsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Autodetect">
+      <module name="spring-labs" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="tests" factoryName="Doctests">
+      <module name="spring-labs" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="FOLDER_NAME" value="" />
+      <option name="TEST_TYPE" value="TEST_SCRIPT" />
+      <option name="PATTERN" value="" />
+      <option name="USE_PATTERN" value="false" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.spring-labs:api [bootJar]" />
+      <item itemvalue="Gradle.spring-labs:api [bootRun]" />
+      <item itemvalue="Gradle.spring-labs:api [build]" />
+      <item itemvalue="Gradle.spring-labs:api [clean]" />
+      <item itemvalue="Spring Boot.Core" />
+      <item itemvalue="Spring Boot.SpringLabsApplication" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Gradle.spring-labs:api [bootRun]" />
+        <item itemvalue="Gradle.spring-labs:api [bootJar]" />
+        <item itemvalue="Gradle.spring-labs:api [clean]" />
+        <item itemvalue="Gradle.spring-labs:api [build]" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.18034.62" />
+        <option value="bundled-js-predefined-1d06a55b98c1-0b3e54e931b4-JavaScript-IU-241.18034.62" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17434bab-33fb-4fd4-9acb-6c9ac2c57bf7" name="Changes" comment="" />
+      <created>1723775847275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1723775847275</updated>
+      <workItem from="1723775848266" duration="5048000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
