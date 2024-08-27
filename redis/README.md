@@ -12,3 +12,11 @@
 - security
 - ml
 - a/b test
+
+
+
+# CLI
+```
+./gradlew :batch:clean :batch:build
+java -jar batch/build/libs/batch.jar  --spring.batch.job.names=sampleJob
+```

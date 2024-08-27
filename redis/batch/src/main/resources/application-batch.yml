@@ -1,0 +1,12 @@
+spring:
+  mail:
+    allow-bean-definition-overriding: true
+  batch:
+    job:
+      enabled: false
+    jdbc:
+      initialize-schema: always
+  application:
+    name: batch
+server:
+  port: 8081
